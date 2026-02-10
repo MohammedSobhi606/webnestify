@@ -47,7 +47,7 @@ export default function Benefits() {
       <div className="w-full flex   items-center flex-row md:flex-nowrap gap-16  py-32 overflow-hidden">
         {horizontalJourney.sections.map((item) => (
           <div
-            className="panel   shrink-0  flex w-80 border border-neutral-100  p-4 flex-col gap-10 bg-neutral-950 "
+            className="panel card   shrink-0  flex w-80 border border-neutral-100  p-4 flex-col gap-10 bg-neutral-950 "
             key={item.description}
           >
             <h1 className="text-orange-500 font-black text-5xl tracking-wider ">

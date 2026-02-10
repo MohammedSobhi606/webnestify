@@ -6,7 +6,7 @@ import { SplitText } from "gsap/SplitText";
 export default function Hero() {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(SplitText);
-  const {} = useGSAP(() => {
+  useGSAP(() => {
     function IntroScene() {
       const introTl = gsap.timeline();
       introTl.from(".hero", {
@@ -70,10 +70,7 @@ export default function Hero() {
         );
     }
 
-    let masterScene = gsap
-      .timeline()
-      .add(IntroScene())
-      .add(HeroScene(), "+=0.5"); // overlap slightly
+    gsap.timeline().add(IntroScene()).add(HeroScene(), "+=0.5"); // overlap slightly
   }, {});
   return (
     <div className="hero flex flex-col items-center justify-center  gap-8 py-16 border rounded-xl border-neutral-600 h-full relative overflow-hidden bg-neutral-900 backdrop-blur-2xl">
