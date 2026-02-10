@@ -22,7 +22,7 @@ export default function Navbar() {
       </div>
 
       {/* call to ac  */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 max-sm:hidden">
         <SunDim className="size-8 text-neutral-50" />
         <button className="px-5 py-1 select-none rounded-lg bg-neutral-50 text-neutral-950 font-semibold hover:bg-neutral-200 cursor-pointer  transition-colors ease-in ">
           Purchase
