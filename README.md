@@ -1,4 +1,4 @@
-# WebNestify.Edu Landing Page Clone
+# WebNestify.Edu Landing Page
 
 A faithful recreation of the **WebNestify.Edu** landing page using **Tailwind CSS**.
 
