@@ -1,16 +1,65 @@
-# React + Vite
+# WebNestify.Edu Landing Page Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A faithful recreation of the **WebNestify.Edu** landing page using **Tailwind CSS**.
 
-Currently, two official plugins are available:
+This project replicates the dark-themed, modern educational platform landing page featuring lifetime access offers, community focus, premium self-hosting & cloud infrastructure content, founder story (Simon), testimonials, and strong CTAs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Project Goal
 
-## React Compiler
+Replicate the visual design, typography, color scheme, content structure, and layout of the original WebNestify.Edu page (as of early 2026 screenshot/analysis).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Dark mode only
+- Responsive (mobile-first)
+- Clean, distraction-free aesthetic
+- Strong emphasis on "no fluff", enterprise-grade knowledge, community & hands-on learning
 
-## Expanding the ESLint configuration
+### Color Palette
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Name           | Hex       | Usage                               |
+| -------------- | --------- | ----------------------------------- |
+| primary-bg     | `#000000` | Main background                     |
+| primary-text   | `#FFFFFF` | Main text color                     |
+| accent-orange  | `#FF6000` | Buttons, highlights, logo accents   |
+| accent-red     | `#FF0000` | "New Update" badge / alerts         |
+| secondary-gray | `#A1A1A1` | Footer text, subtle secondary text  |
+| dark-gray      | `#1A1A1A` | Cards, sections, subtle backgrounds |
+
+## 📄 Page Content Summary
+
+### Main Sections
+
+1. **Header / Navigation**  
+   Logo · Home · Features · Changelog · Search · Purchase button
+
+2. **Hero**
+
+   - "New Update" badge
+   - Headline: "A Community Powered by Knowledge and Freedom"
+   - Two prominent CTAs: Purchase Lifetime Access / Subscribe & Join
+
+3. **Three Benefits Cards**
+
+   - All content. No distractions.
+   - Real people. Real answers.
+   - One price. Full access.
+
+4. **About / Founder Story**  
+   Simon (cloud infrastructure specialist) → personal story → mission of the Learning Hub
+
+5. **Features Grid**  
+   Step-by-step tutorials, Monthly Live Q&A, Community Discussions, Premium courses, Resource Library, Frequent Updates
+
+6. **Testimonial**  
+   Quote from Alex F. (Freelance Developer) praising practical, zero-fluff approach
+
+7. **Final CTA**  
+   "Get Instant Access to Enterprise-Grade Knowledge without the 'course factory' fluff."
+
+8. **Footer**  
+   Terms & Conditions · Privacy Policy · Copyright © 2026 WebNestify Learning Hub
+
+## 🛠️ Tech Stack
+
+- **HTML5**
+- **Tailwind CSS**
+- **JavaScript**
