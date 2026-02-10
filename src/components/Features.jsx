@@ -11,7 +11,7 @@ export default function Features() {
       y: 60,
       opacity: 0,
       scrollTrigger: ".feature",
-      ease: "power2.inOut",
+      ease: "power4.in",
       stagger: 0.1,
     });
   });

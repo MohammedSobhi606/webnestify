@@ -7,34 +7,38 @@ export default function Benefits() {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     const panels = gsap.utils.toArray(".panel");
-    const HS = gsap.to(panels, {
-      scrollTrigger: {
-        trigger: ".horizontalJourney",
-        scrub: 1,
-        pin: true,
-        anticipatePin: 2,
-        // pinSpacing: false,
-        snap: 0.75 / panels.length,
-        start: "top top",
-        end: `bottom `,
-      },
-      xPercent: panels.length * -100,
-      ease: "none",
-    });
-    panels.forEach((p, inx) => {
-      const elements = p.querySelectorAll("h1,p");
-      if (inx <= 1) {
-        return;
-      }
-      gsap.from(elements, {
-        y: 50,
-        opacity: 0,
-        stagger: ".2",
+
+    let mm = gsap.matchMedia();
+    mm.add("(min-width:1000px)", () => {
+      const HS = gsap.to(panels, {
         scrollTrigger: {
-          containerAnimation: HS,
-          trigger: p,
-          start: "end center",
+          trigger: ".horizontalJourney",
+          scrub: 1,
+          pin: true,
+          anticipatePin: 2,
+          // pinSpacing: false,
+          snap: 0.75 / panels.length,
+          start: "top top",
+          end: `bottom `,
         },
+        xPercent: panels.length * -100,
+        ease: "none",
+      });
+      panels.forEach((p, inx) => {
+        const elements = p.querySelectorAll("h1,p");
+        if (inx <= 1) {
+          return;
+        }
+        gsap.from(elements, {
+          y: 50,
+          opacity: 0,
+          stagger: ".2",
+          scrollTrigger: {
+            containerAnimation: HS,
+            trigger: p,
+            start: "end center",
+          },
+        });
       });
     });
   });
@@ -44,7 +48,7 @@ export default function Benefits() {
         {horizontalJourney.title}
       </h1>
 
-      <div className="w-full flex   items-center flex-row md:flex-nowrap gap-16  py-32 overflow-hidden">
+      <div className="w-full flex   items-center flex-row md:flex-nowrap gap-16  py-32 overflow-hidden max-md:overflow-x-scroll">
         {horizontalJourney.sections.map((item) => (
           <div
             className="panel card   shrink-0  flex w-80 border border-neutral-100  p-4 flex-col gap-10 bg-neutral-950 "
